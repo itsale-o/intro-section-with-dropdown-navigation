@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    font-size: 1.125rem;
+}
+
+#menu-section{
+    display: inherit;
+}
+
+.hover:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+#menu-section > img{
+    margin-right: 2rem;
+}
+
+h1{
+    margin-right: .2rem;
+    font-size: .9rem;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.p-login{
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+h1:hover, .p-login:hover, .hover > p:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+button{
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: solid 2px hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.register-button:hover{
+    background-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 98%);
+}
+
+#learn-more-btn:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-title{
+    font-weight: 700;
+}
+
+#description{
+    width: 350px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+#learn-more-btn{
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border-color: hsl(0, 0%, 8%);
+    width: 120px;
+    font-size: .8rem;
+    margin-bottom: 2.5rem;
+}
+
+#brands{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+}
+
+#brands > img{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.databiz{
+    width: 75px;
+}
+
+.audiophile{
+    width: 50px;
+}
+
+.meet{
+    width: 65px;
+}
+
+.maker{
+    width: 70px;
+}
+
+.drop > li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.drop > li > img{
+    width: 13px;
+    margin-right: .5rem;
+}
+
+.drop > li > p{
+    font-size: .8rem;
+}
+
+#dropdown-1{
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 5rem;
+}
+
+#dropdown-2{
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 14.5rem;
+}
+
+#dropdown-1-mobile, #dropdown-2-mobile{
+    display: none;
+}
+
+@media(min-width: 700px){
+    #header-mobile{
+        display: none;
+    }
+
+    #header-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color:  hsl(0, 0%, 41%);
+        padding: 1rem;
+    }
+
+    #menu-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    #menu-desktop > li{
+        margin-right: 1.5rem;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+    
+    #header-login{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #menu-title1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .p-login{
+        margin-right: 1rem;
+    }
+
+    #main-container{
+        width: 780px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem auto 2rem auto;
+    }
+
+    #info{
+        width: 50%;
+    }
+    
+    #main-title{
+        font-size: 3rem;
+        width: 320px;
+        line-height: 3rem;
+        margin: 5.5rem 0 2.5rem 0;
+    }
+
+    #description{
+        font-size: .85rem;
+    }
+    
+    .drop{
+        background-color: white;
+        padding: 1rem 1.2rem 0 1.2rem;
+        border-radius: 9px;
+        box-shadow: 5px 5px 20px hsl(0, 0%, 41%);
+    }
+
+    #illustration-div{
+        height: 500px;
+        width: 50%;
+        background-image: url(images/image-hero-desktop.png);
+        background-size: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    #header-desktop{
+        display: none;
+    }
+
+    #header-mobile{
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0 1rem 0;
+        margin: 0 auto 0 auto;
+    }
+
+    #open-menu-mobile-img{
+        cursor: pointer;
+    }
+
+    #menu-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        min-height: 100vh;
+        width: 300px;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        right: -300px;
+        transition: 200ms;
+        height: 150px;
+    }
+
+    #close-menu-icon{
+        cursor: pointer;
+        margin: 0 0 2rem auto;
+    }
+
+    #menu-mobile > ul> li{
+        cursor: pointer;
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 1rem;
+        list-style: none;
+    }
+
+    .p{
+        font-size: .9rem;
+    }
+
+    .hover:hover{
+        color: hsl(0, 0%, 8%);   
+    }
+
+    .drop{
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    #header-mobile-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header-mobile-login > button{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #main-container{
+        width: 350px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto 2rem auto;
+    }
+
+    #info{
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+    
+    #main-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #dark-bg-div{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    #description{
+        font-size: .98rem;
+        text-align: center;
+    }
+
+    #illustration-div{
+        height: 263px;
+        background-image: url(images/image-hero-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+footer{
+    color: hsl(0, 0%, 8%);;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a{
+    color: hsl(0, 0%, 41%);
+}

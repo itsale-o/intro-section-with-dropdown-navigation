@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro Section With Dropdown Navigation</title>
+</head>
+<body>
+  <main>
+    <div id="header-desktop">
+      <div id="menu-section">
+        <img src="images/logo.svg" alt="">
+        <ul id="menu-desktop">
+          <li>
+            <div class="hover" id="menu-title1">
+              <h1>Features</h1>
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>                  
+            <div>
+              <ul class="drop" id="dropdown-1">
+                <li class="hover">
+                  <img src="images/icon-todo.svg" alt="">
+                  <p>Todo List</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-calendar.svg" alt="">
+                  <p>Calendar</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-reminders.svg" alt="">
+                  <p>Reminders</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-planning.svg" alt="">
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="hover" id="menu-title2">
+              Company
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <div>
+              <ul class="drop" id="dropdown-2">
+                <li class="hover">
+                  <p>History</p>
+                </li>
+                <li class="hover">
+                  <p>Our Team</p>
+                </li>
+                <li class="hover">
+                  <p>Blog</p>
+                </li>
+              </ul>
+            </div>           
+          </li>
+          <li class="hover">Careers</li>
+          <li class="hover">About</li>
+        </ul>
+      </div>
+      <div id="header-login">
+        <p class="p-login hover">Login</p>
+        <button class="register-button">Register</button>
+      </div>
+    </div>
+    <div id="header-mobile">
+      <img src="images/logo.svg" alt="">
+      <img id="open-menu-mobile-img" src="images/icon-menu.svg" alt="">
+      <div id="menu-mobile">
+        <img id="close-menu-icon" src="images/icon-close-menu.svg" alt="">
+        <ul>
+          <li>
+            <div class="hover p" id="menu-title1-mobile">
+              Features
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>   
+            <div id="menu-drop-mobile1">
+              <ul class="drop" id="dropdown-1-mobile">
+                <li class="hover">
+                  <img src="images/icon-todo.svg" alt="">
+                  <p>Todo List</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-calendar.svg" alt="">
+                  <p>Calendar</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-reminders.svg" alt="">
+                  <p>Reminders</p>
+                </li>
+                <li class="hover">
+                  <img src="images/icon-planning.svg" alt="">
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="hover p" id="menu-title2-mobile">
+              Company
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <div id="menu-drop-mobile2">
+              <div id="menu-2">
+                <ul class="drop" id="dropdown-2-mobile">
+                  <li class="hover">
+                    <p>History</p>
+                  </li>
+                  <li class="hover">
+                    <p>Our Team</p>
+                  </li>
+                  <li class="hover">
+                    <p>Blog</p>
+                  </li>
+                </ul>
+              </div>   
+            </div>
+          </li>
+          <li class="hover p">
+            <p>Careers</p>
+          </li>
+          <li class="hover p">
+            <p>About</p>
+          </li>
+        </ul>
+        <div id="header-mobile-login">
+          <p class="p-login hover">Login</p>
+          <button class="register-button">Register</button>
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <div id="info">
+        <p id="main-title">Make remote work</p>
+        <p id="description">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button id="learn-more-btn">Learn more</button>
+        <div id="brands">
+          <img class="databiz" src="images/client-databiz.svg" alt="">
+          <img class="audiophile" src="images/client-audiophile.svg" alt="">
+          <img class="meet" src="images/client-meet.svg" alt="">
+          <img class="maker" src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div id="illustration-div"></div>
+    </div>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/itsale-o">Alessandra Oliveira</a>.
+  </footer>
+  <div id="dark-bg-div"></div>
+  <script src="script.js"></script>
+</body>
+</html>
