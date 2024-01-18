@@ -61,8 +61,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live site with Github Pages](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-solution-ag6QcZTcCQ)
+- Live Site URL: [Live site with Github Pages](https://itsale-o.github.io/intro-section-with-dropdown-navigation/)
 
 ## My process
 
